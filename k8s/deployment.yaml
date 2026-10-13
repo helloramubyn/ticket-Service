@@ -22,7 +22,7 @@ spec:
             - containerPort: 8082
           envFrom:
             - secretRef:
-                name: ${SECRET_NAME}
+                name: i27-ticket-dev
           readinessProbe:
             httpGet:
               path: /readyz

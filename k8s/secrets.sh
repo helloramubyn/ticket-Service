@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-kubectl create secret generic i27-ticket-env \
+kubectl create secret generic i27-ticket-dev \
   --from-env-file=.env.dev \
   --dry-run=client -o yaml | kubectl apply -f -
 
